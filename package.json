@@ -1,0 +1,40 @@
+{
+  "name": "jest-spectreport-reporter",
+  "version": "0.0.1",
+  "description": "A jest reporter for use with Spectreport",
+  "main": "index.js",
+  "scripts": {
+    "prelint": "npm run build",
+    "pretest": "npm run lint",
+    "build": "tsc",
+    "lint": "tslint index.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jj4th/jest-spectreport-reporter.git"
+  },
+  "keywords": [
+    "jest",
+    "spectreport",
+    "test"
+  ],
+  "author": "John J. Andrichak IV",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jj4th/jest-spectreport-reporter/issues"
+  },
+  "homepage": "https://github.com/jj4th/jest-spectreport-reporter#readme",
+  "devDependencies": {
+    "@types/jest": "^20.0.8",
+    "jest": "^21.1.0",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      "./index.js"
+    ]
+  }
+}
